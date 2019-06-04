@@ -17,7 +17,7 @@
 #define Push_i(__a__)   _Push_i(&sp, (__a__))
 #define Pop_i()         _Pop_i(&sp)
 
-static VM_Abort(VM_STATUS *pVMStatus)
+static VOID VM_Abort(VM_STATUS *pVMStatus)
 {
     *pVMStatus = emVS_ExceptionOccured;
 }

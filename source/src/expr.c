@@ -203,7 +203,7 @@ static PCHAR Type_GetSpecTypeName(SPECIFIER_TYPE SpecType)
     return g_pszSpecTypeName[SpecType - emTYPE_SPEC_Mask];
 }
 
-static Type_Compare(SPECIFIER_TYPE type1, SPECIFIER_TYPE type2)
+static bool Type_Compare(SPECIFIER_TYPE type1, SPECIFIER_TYPE type2)
 {
     if (type1 == emTYPE_VOID)
     {
